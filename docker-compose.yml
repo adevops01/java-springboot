@@ -24,7 +24,7 @@ services:
       DB_PASSWORD: postgres
       # Demo override so Hibernate creates the table in this fresh Compose DB
       # (In real prod, a migration tool like Flyway creates tables before boot)
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      # SPRING_JPA_HIBERNATE_DDL_AUTO: update
     depends_on:
       db:
         condition: service_healthy

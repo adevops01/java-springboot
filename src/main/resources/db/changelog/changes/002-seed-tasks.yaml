@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-seed-tasks
+      author: adevops01
+      changes:
+        - insert:
+            tableName: tasks
+            columns:
+              - column:
+                  name: title
+                  value: "Manage schema with Liquibase"
+              - column:
+                  name: done
+                  valueBoolean: false
